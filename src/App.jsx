@@ -1,14 +1,16 @@
 import './App.css'
 
 import Navbar from './components/Navbar'
-import DsCard from './components/DsCard'
+// import ProductDetails from './components/ProductDetails'
+import Cart from './components/Cart'
 
 function App() {
 
   return (
     <>
       <Navbar />
-      <DsCard />
+      {/* <ProductDetails /> */}
+      <Cart />
     </>
   )
 }

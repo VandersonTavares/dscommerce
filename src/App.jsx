@@ -1,7 +1,7 @@
 import './App.css'
 
 import Navbar from './components/Navbar'
-// import ProductDetails from './components/ProductDetails'
+import ProductDetails from './components/ProductDetails'
 import Cart from './components/Cart'
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <ProductDetails /> */}
+      <ProductDetails />
       <Cart />
     </>
   )

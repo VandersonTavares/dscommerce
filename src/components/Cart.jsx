@@ -11,21 +11,21 @@ const Cart = () => {
           <div className="flex">
             <img className="mx-5" src={img3} alt="" width={78} height={78} />
             <div className="item-name flex flex-col">
-              <h2 className="text-xs font-bold pt-2 text-[#636363]">
+              <h2 className="text-xs font-bold pt-2 text-[color:var(--dsItemName)]">
                 Computador Gamer XT
               </h2>
               <ButtonAdd />
             </div>
           </div>
           <div className="item-price ">
-            <span className="px-5 text-[#0CAF1D] font-bold text-xs">
+            <span className="px-5 text-[color:var(--dsPriceText)] font-bold text-xs">
               R$ 5000,00
             </span>
           </div>
         </div> 
 
         <div className="itens-total flex justify-start p-2 px-5">
-          <span className="text-[#0CAF1D] font-bold text-lg">R$ 15000,00</span>
+          <span className="text-[color:var(--dsPriceText)] font-bold text-lg">R$ 15000,00</span>
         </div>
       </div>
     </section>

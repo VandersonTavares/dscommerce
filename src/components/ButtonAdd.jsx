@@ -16,11 +16,11 @@ const ButtonAdd = () => {
 
   return (
     <div className="buttonAdd">
-      <button onClick={diminuir} className="text-[#3483FA] font-bold mr-1">
+      <button onClick={diminuir} className="text-[color:var(--dsDefaultButtonBg)] font-bold mr-1">
         -
       </button>
       <span className="text-[#636363] font-bold">{valor}</span>
-      <button onClick={aumentar} className="text-[#3483FA] font-bold ml-1">
+      <button onClick={aumentar} className="text-[color:var(--dsDefaultButtonBg)] font-bold ml-1">
         +
       </button>
     </div>

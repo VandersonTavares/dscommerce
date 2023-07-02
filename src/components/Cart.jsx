@@ -1,35 +1,48 @@
 import img3 from "../assets/img/image 3.png";
 
-import ButtonAdd from "./ButtonAdd";
-
 const Cart = () => {
-  return (
-    <section className="cart px-5">
-      <div className="container mx-auto max-w-6xl bg-white rounded mt-5">
+    return (
+        <section className="cart">
+            <div className="container mx-auto max-w-6xl">
+                <div className="card bg-white m-5 rounded">
 
-        <div className="item flex flex-wrap justify-between border-b-2">
-          <div className="flex">
-            <img className="mx-5" src={img3} alt="" width={78} height={78} />
-            <div className="item-name flex flex-col">
-              <h2 className="text-xs font-bold pt-2 text-[color:var(--dsItemName)]">
-                Computador Gamer XT
-              </h2>
-              <ButtonAdd />
+                    <div className="item-cart flex p-2 border-b-2 ">
+                        <div className="image mr-4">
+                            <img src={img3} alt="" width={78} height={78} />
+                        </div>
+                        <div className="flex w-full justify-between">
+                            <div className="item-qtd">
+                                <h1 className="text-[#636363] font-bold text-base">Computador Gamer XT</h1>
+                                <span className="text-blue-500 font-bold text-[20px]">-</span> <span className="font-bold">1</span> <span className="text-blue-500 font-bold text-[20px]">+</span>
+                            </div>
+                            <div className="item-price">
+                                <span className="price text-base">R$ 5000,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="item-cart flex p-2 border-b-2 ">
+                        <div className="image mr-4">
+                            <img src={img3} alt="" width={78} height={78} />
+                        </div>
+                        <div className="flex w-full justify-between">
+                            <div className="item-qtd">
+                                <h1 className="text-[#636363] font-bold text-base">Computador Gamer XT</h1>
+                                <span className="text-blue-500 font-bold text-[20px]">-</span> <span className="font-bold">1</span> <span className="text-blue-500 font-bold text-[20px]">+</span>
+                            </div>
+                            <div className="item-price">
+                                <span className="price text-base">R$ 5000,00</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="itens-total flex justify-end p-2">
+                        <span className="price text-lg">R$ 15000,00</span>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div className="item-price ">
-            <span className="px-5 text-[color:var(--dsPriceText)] font-bold text-xs">
-              R$ 5000,00
-            </span>
-          </div>
-        </div> 
+        </section>
+    )
+}
 
-        <div className="itens-total flex justify-start p-2 px-5">
-          <span className="text-[color:var(--dsPriceText)] font-bold text-lg">R$ 15000,00</span>
-        </div>
-      </div>
-    </section>
-  );
-};
-
-export default Cart;
+export default Cart
